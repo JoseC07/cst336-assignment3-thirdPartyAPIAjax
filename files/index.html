@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Midterm</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <link href="css/styles.css" rel="stylesheet" type="text/css" />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+        <div class = "container">
+            <div id="result" class="jumbotron">
+                <h1>Open Library</h1>
+                <p>Please enter the ISBN of the book you'd like to retrieve</p>
+                <form class = "row">
+                    <label for = "field" class ="col-sm-2 col">ISBN</label>
+                    <!-- this input holds data enterd by user, type 'text' -->
+                    <input type = "text" class ="field">
+                    <!-- this input hold submit button info, type 'submit' -->
+                    <input type="submit" value="Query" class = "Submit">
+            
+                </form>
+
+            </div>
+            
+            <div id="result" class ="row">
+                <div id= "cover" class= "col">
+                    <img id = "img" src= "" alt="Book Cover">
+                </div>
+                <div id= "info" class= "col">
+                    Title: <p id= "title"></p>
+                    <br>
+                    Author: <p id= "author"></p>
+                    <br>
+                    Publish: <p id= "publish"></p>
+                    <br>
+                    Publisher: <p id= "publisher"></p>
+                    <br>
+                    ISBN: <p id= "isbn"></p>
+                    <br>
+                    Pages: <p id= "pages"></p>
+                </div>
+            </div>
+        </div>
+		
+        <script SRC = "js/functions.js"></script>
+    </body>
+</html>
